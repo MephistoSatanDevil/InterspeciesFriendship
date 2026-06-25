@@ -1,3 +1,5 @@
+![Boo & Wilson](https://forums.beamdog.com/uploads/editor/sr/v7u98pq3jjnp.png)
+
 # Interspecies Friendship: Boo & Wilson
 
 A tiny Baldur's Gate II mod that adds **seven interjections** for **Boo** and **Wilson**.
