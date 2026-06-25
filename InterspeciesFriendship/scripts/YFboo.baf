@@ -1,0 +1,23 @@
+//Wilson-Boo Start Dialogue Trigger if Boo talks first.
+IF
+	OR(4)
+		Global("YFWilsonBooTalks","GLOBAL",7)//第二次对话，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",15)//第四次对话，团队休息时，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",19)//第五次对话，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",27)//第七次对话，团队休息时，布布发起
+THEN
+	RESPONSE #100
+	StartDialogNoSet(Player1)
+	//Wait(1)
+    //ActionOverride("Boo",DestroySelf())
+END
+
+//Start dialogue trigger for Suldanessellar talk
+IF
+	Global("YFWilsonBooSuldanessellarTalk","GLOBAL",2)
+THEN
+	RESPONSE #100
+	StartDialogNoSet(Player1)
+	//Wait(1)
+    //ActionOverride("Boo",DestroySelf())
+END

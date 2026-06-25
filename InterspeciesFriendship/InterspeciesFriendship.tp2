@@ -1,0 +1,107 @@
+BACKUP ~InterspeciesFriendship/backup~
+
+AUTHOR ~Mephisto Satan Devil~
+
+VERSION ~Version 1.0.0~
+
+README ~InterspeciesFriendship/readme.md~ //This gives people the option of opening the readme
+
+AUTO_TRA ~InterspeciesFriendship/translations/%s~ //You need this if you plan to have multiple languages.
+
+// This code should make this EET compatible because why not?
+ALWAYS
+  ACTION_IF NOT VARIABLE_IS_SET bg2_chapter BEGIN
+    ACTION_IF GAME_IS ~eet~ BEGIN
+      OUTER_SET bg2_chapter = 12 // EET uses continuous chapter numbering from BG1 through TOB and this starts at "12" in BGII
+    END ELSE BEGIN
+      OUTER_SET bg2_chapter = 0 // all other game types (BGII(:EE), BGT) restart chapter numbering in SOA
+    END
+    OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+      OUTER_SET bg2_chapter = bg2_chapter + 1
+      OUTER_SPRINT name_source ~bg2_chapter_%i%~
+      OUTER_SET EVAL ~%name_source%~ = bg2_chapter //store adjusted chapter numbers in %bg_chapter_#% variables for use in .baf/.d scripts (e.g., %bg_chapter_1% will evaluate to 13 for EET and to 1 otherwise). This only works if you add the EVALUATE BUFFER code when compiling files with chapter triggers. See below.
+    END
+  END
+END
+
+LANGUAGE ~Simplified Chinese~ ~schinese~ ~InterspeciesFriendship/translations/schinese/setup.tra~
+LANGUAGE ~English~ ~english~ ~InterspeciesFriendship/translations/english/setup.tra~ 
+LANGUAGE ~Russian~ ~russian~ ~InterspeciesFriendship/translations/russian/setup.tra~
+LANGUAGE ~French~ ~french~ ~InterspeciesFriendship/translations/french/setup.tra~
+		 
+BEGIN @1 /*~Interspecies Friendship~*/        //Any text written after Begin will appear as XXX in the Weidu install: Install XXX?
+	FORBID_COMPONENT ~EET_end.tp2~ ~0~ @53
+	FORBID_COMPONENT ~EET_end.tp2~ ~1~ @53
+	
+// Adds CD_STATE_NOTVALID state from CamDawg. May be unnecessary when coding for EE.
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~	
+
+//Code to give Wilson proper dialogue files, courtesy of LavaDelVortel so our mods don't conflict
+ACTION_IF FILE_EXISTS_IN_GAME ~wilson.dlg~ THEN BEGIN
+ PRINT @137 
+    APPEND ~interdia.2da~ ~WILSON BWILSON BWILSO25~
+    UNLESS ~WILSON~
+	
+	COPY_EXISTING ~pdialog.2da~ ~override~
+  REPLACE_TEXTUALLY ~^[ %TAB%]*WILSON[ %TAB%].+$~
+                    ~WILSON                 WILSONP                WILSONJ                WILSOND                WILSO25P               WILSO25J               WILSO25D               WILSON25~
+BUT_ONLY_IF_IT_CHANGES //This stops Weidu from repeating the action if another mod already installed Wilson's files
+
+//Dialogue Files
+    ACTION_IF NOT (FILE_EXISTS_IN_GAME ~WILSO25J.dlg~) THEN BEGIN
+   COMPILE ~InterspeciesFriendship/dialogues/WILSO25JFix.d~
+  END
+END
+
+//TOB Script
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~Wilson25.bcs~) THEN BEGIN
+  COMPILE ~InterspeciesFriendship/scripts/wilson25.baf~
+END
+
+COPY_EXISTING ~Wilson13.cre~ ~override~ // Wilson version summoned by Fate Spirit in new ToB game (this version will NOT be summoned in EET if Wilson was with the party in SoA)
+  WRITE_EVALUATED_ASCII DIALOG          ~WILSON25~ #8
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~WILSON25~ #8
+  ADD_CRE_ITEM ~L#wilroc~ #1 #0 #0 ~identified~ ~qitem~ // missed quest reward from SoA
+  
+ 
+//Code to give Boo proper dialogue files, courtesy of LavaDelVortel so our mods don't conflict
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~BOO.dlg~) THEN BEGIN
+ PRINT @138 
+    APPEND ~interdia.2da~ ~BOO BBOO BBOO~
+    UNLESS ~BOO~	
+	APPEND ~pdialog.2da~ ~BOO                 BOOP                BOOJ                BOOD                ***               ***               ***               ***~
+	UNLESS ~BOO~
+
+BUT_ONLY_IF_IT_CHANGES 
+//Dialogue Files
+   ACTION_IF NOT (FILE_EXISTS_IN_GAME ~BOO.dlg~) THEN BEGIN
+   COMPILE ~InterspeciesFriendship/dialogues/BOOFix.d~
+  END
+END
+
+COPY_EXISTING ~Boo.cre~ ~override~ 
+  WRITE_EVALUATED_ASCII DIALOG          ~BOO~ #8
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~BOO~ #8
+  WRITE_ASCII 0x34 ~YFBooM~ #8 //portraits
+  WRITE_ASCII 0x3c ~YFBooL~ #8
+  WRITE_ASCII 0x280 ~Boo~ #32
+  ADD_CRE_ITEM ~IMOENHP1~ #0 #0 #0 ~IDENTIFIED~ ~BELT~ EQUIP
+  
+PRINT @153
+//dialogue files
+COMPILE EVALUATE_BUFFER ~InterspeciesFriendship/dialogues/YFWilsonboo.d~
+COMPILE EVALUATE_BUFFER ~InterspeciesFriendship/dialogues/YFWilsonbooInterjections.d~
+COMPILE EVALUATE_BUFFER ~InterspeciesFriendship/dialogues/YFWilsonbootob.d~
+
+//Script Files
+EXTEND_BOTTOM ~boo.bcs~ ~InterspeciesFriendship/scripts/YFboo.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~wilson.bcs~ ~InterspeciesFriendship/scripts/YFwilson.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~wilson25.bcs~ ~InterspeciesFriendship/scripts/YFwilsontob.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~wilsond.bcs~ ~InterspeciesFriendship/scripts/YFwilsond.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~wilso25d.bcs~ ~InterspeciesFriendship/scripts/YFwilso25d.baf~ EVALUATE_BUFFER
+
+PRINT @154
+
+COPY ~InterspeciesFriendship/spell/YFBoo.SPL~ ~override/YFBoo.SPL~
+COPY ~InterspeciesFriendship/Portraits~ ~override~

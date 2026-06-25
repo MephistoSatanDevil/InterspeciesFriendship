@@ -1,0 +1,92 @@
+//First Wilson-Boo Friendship Dialogue — First Meeting
+@0 /*Wilson*/ = ~Huff...~ [OH87168]
+@1 /*Boo*/ = ~*Boo's whiskers quiver slightly, his little paws gripping the edge of the pocket tightly, with only a pair of round eyes peeking out* Squeak squeak...~ [AMB_E45C]
+@2 /*Boo*/ = ~*Boo probably thinks his voice is too small, so he musters his courage to crawl out of the backpack and takes a few steps closer to Wilson* Squeak squeak squeak?~ [AMB_E45A]
+@3 /*Wilson*/ = ~Grumble, huh? *Wilson looks around in confusion, and finally spots the little hamster hiding in the corner*~
+@4 /*Boo*/ = ~*Boo's whiskers quiver as he gazes at the massive creature before him, ready to flee at any moment* Squeak squeak~
+@5 /*Wilson*/ = ~*Hmph* Wilson sniffs, lowering his heavy head, his amber eyes glinting in the firelight, a low rumble emanating from his throat as he bares half of his yellowed fangs*~
+@6 /*Boo*/ = ~Squeak squeak... squeak squeak. *Boo squeaks twice more, then looks at Wilson, his tail pressed tightly against his body, his whiskers trembling slightly with tension*~
+@7 /*Boo*/ = ~Squeak—*Boo seems a little embarrassed, licks his front paws, and begins grooming his fur. There are still bits of nut shell stuck to his coat from the backpack.*~
+@8 /*Wilson*/ = ~Hmm, oww... *Wilson takes a deep breath, sneezes, and his paws unconsciously scratch at the ground, leaving several deep claw marks, his thick back rising and falling slightly*~
+@9 /*Boo*/ = ~Squeak squeak... squeak squeak. *Boo finishes grooming his face, then carefully cleans his little ears, squeaks twice, and runs back into the backpack.*~
+@10 /*Minsc*/ = ~Boo, where did you run off to? Minsc caught a delicious big bug for you. What? You say you saw a big fella?~
+@11 /*Boo*/ = ~Squeak—~ [AMB_E45B]
+
+//Second Boo-Wilson Friendship Dialogue — Approaching
+@12 /*Boo*/ = ~Chirp chirp* Boo looks at Wilson with an envious gaze, his whiskers twitching, his little nose sniffing the air repeatedly*~ [AMB_E45C]
+@13 /*Wilson*/ = ~Woof—*Wilson looks toward Boo and lets out a low growl*~ [OH87168]
+@14 /*Boo*/ = ~Squeak squeak* As if startled by Wilson's voice, Boo's fur suddenly stands on end*~
+@15 /*Wilson*/ = ~Huff* Wilson sniffs, the corner of his mouth seeming to twitch, baring half a fang*~
+@16 /*Boo*/ = ~*Boo slowly moves a few steps closer, his little nose sniffing the air, his whiskers reaching forward, his tail lifting slightly, his ears standing straight up*~
+@17 /*Wilson*/ = ~*Arooo* Looks at Boo with a complex gaze, his heavy head lowering slightly as he lets out a long howl, the warm breath from his snout blowing Boo's whiskers backward*~
+@18 /*Boo*/ = ~*Boo is startled, but quickly regains his composure, his ears perking up, his little paws wiping his face, his whiskers curling slightly with curiosity*~
+@19 /*Wilson*/ = ~*His paws paw at the pebbles on the ground, a low growl rumbling from his throat, his thick foot stomping heavily on the earth* Oww.~
+@20 /*Boo*/ = ~*Thoughtfully, his little paws scratch his face, his whiskers trembling slightly* Squeak squeak squeak.~
+@21 /*Wilson*/ = ~Grumble grumble* Wilson's thick shoulders shake slightly, his paws leaving deeper marks in the ground*~
+@22 /*Minsc*/ = ~Boo! Minsc smells the scent of wisdom! Are you talking to rocks again? Come back! Minsc needs your tactical analysis!~
+
+//Third Wilson-Boo Friendship Dialogue — Getting Acquainted
+@23 /*Wilson*/ = ~Hmph... huh? *Wilson looks quizzically at the little creature approaching him.*~ [OH87168]
+@24 /*Boo*/ = ~*Boo seems completely unaware, crawling directly toward Wilson's big paw, then sitting down and beginning to diligently massage his own large cheek pouches*~ [AMB_E45B]
+@25 /*Wilson*/ = ~Hmph, huh? *Wilson doesn't disturb him, watching the busy little fellow with bemusement from the side.*~
+@26 /*Boo*/ = ~*After much effort, Boo finally squeezes a nut kernel as long as half his own body out of his cheek pouch and places it on Wilson's big paw*~
+@27 /*Wilson*/ = ~Roar? *Wilson looks with great surprise at the nut kernel on his paw, which is only a quarter the size of his own paw*~
+@28 /*Boo*/ = ~*Boo sits up, his body erect* Squeak squeak... squeak squeak squeak.~
+@29 /*Wilson*/ = ~*Wilson lets out a soft growl* Arooo...~
+@30 /*Boo*/ = ~*Boo sits beside Wilson's paw* Squeak squeak squeak...~
+@31 /*Wilson*/ = ~Oww... ROAR! *Wilson nods, gently touching Boo with the tip of his nose*~
+@32 /*Boo*/ = ~Squeak squeak squeak?~
+@33 /*Wilson*/ = ~Hmm, oww.~
+@34 /*Minsc*/ = ~Boo—! Minsc can't find the biggest nut in the world that he prepared for you! Boo!~
+@35 /*Boo*/ = ~Squeak squeak—*Boo quickly jumps off Wilson's paw and scurries toward the direction of the voice*~
+@36 /*Wilson*/ = ~*Wilson lowers his head, sniffs the nut kernel left on his paw, curls his tongue around it, and swallows it in one bite*~
+
+//Fourth Boo-Wilson Friendship Dialogue — Becoming Friends (while the party is resting)
+@37 /*Boo*/ = ~*Boo's voice is very soft, but no longer trembling* Squeak squeak.~ [AMB_E45B]
+@38 /*Wilson*/ = ~Oww... roar. *Wilson responds softly*~ [OH87168]
+@39 /*Boo*/ = ~*Hesitating for a moment, his little paws clasped in front of his chest* Squeak squeak squeak.~
+@40 /*Wilson*/ = ~Hmph. *Turns his head to look at Boo, letting out a soft snort.*~
+@41 /*Boo*/ = ~Coo coo... squeak squeak... coo coo...~
+@42 /*Wilson*/ = ~Woof... *Lets out a low, rumbling woof*~
+@43 /*Boo*/ = ~*Sighs* Squeak squeak... squeak—~
+@44 /*Wilson*/ = ~Ruff—*Shakes his head slowly, sniffs the air, and lets out a long breath*~
+@45 /*Boo*/ = ~*His ears droop* Squeak—?~
+@46 /*Wilson*/ = ~Grumble. Oww. *Wilson looks toward the sleeping Minsc, his paws unconsciously scraping at the ground*~
+@47 /*Boo*/ = ~*Silent for a long time, his little paws unconsciously gripping Wilson's fur, letting out a faint squeak* Squeak squeak squeak...~
+@48 /*Wilson*/ = ~*Wilson gently rubs the tip of his nose against the top of Boo's head, starts to stick out his tongue to lick Boo, then suddenly stops and turns to lick his other paw instead.*~
+@49 /*Minsc*/ = ~*Sleep-talking* Boo... left side... ambush... tell Minsc quickly...~
+
+//Fifth Boo-Wilson Friendship Dialogue — Asking for Help (Controlling Anger)
+@50 /*Boo*/ = ~*Urgently* Squeak squeak.~ [AMB_E45B]
+@51 /*Wilson*/ = ~*Wilson is calm, his ears standing straight up* Arooo—~ [OH87168]
+@52 /*Boo*/ = ~*His little paws gesturing* Squeak squeak squeak.~
+@53 /*Wilson*/ = ~*Wilson lets out a low growl, his paw slamming heavily on the ground* Arooo.~
+@54 /*Boo*/ = ~Chirp chirp. *Boo freezes for a moment, then quickly starts squeaking.* Squeak squeak squeak*~
+@55 /*Wilson*/ = ~*Wilson is silent for a moment, then rumbles with a hint of hesitation* Grumble grumble.~
+@56 /*Boo*/ = ~*Boo tilts his head, staring at Wilson, then spins in two circles, stands up, and looks toward Minsc* Squeak squeak squeak.~
+@57 /*Minsc*/ = ~Boo! Boo! Minsc needs the warmth in his pocket! Where are you?! Minsc can't smell you!—Boo! Come back!~
+@58 /*Boo*/ = ~*Boo runs toward Minsc, but stops halfway and looks back at Wilson.* Squeak squeak.~
+
+//Sixth Wilson-Boo Friendship Dialogue — Helping (Go for the eyes!) after battle
+@59 /*Wilson*/ = ~Roar huh? *Wilson sees the nimble little creature running toward him again*~ [OH87168]
+@60 /*Boo*/ = ~Coo coo. Squeak squeak? *Boo tells Wilson something, then asks his own question.*~ [AMB_E45B]
+@61 /*Wilson*/ = ~*Calm, ears swiveling, lets out a low growl* Arooo...~
+@62 /*Boo*/ = ~Squeak squeak squeak? *Boo seems incredulous, sitting down to think seriously.*~
+@63 /*Wilson*/ = ~Oww. *Wilson growls low, staring at Boo*~
+@64 /*Boo*/ = ~*Boo looks up, his ears perking slightly, then suddenly makes a fierce pouncing and biting motion* Squeak—~
+@65 /*Wilson*/ = ~Arooo. *Wilson gives Boo an affirming low growl.*~
+@66 /*Boo*/ = ~*Boo's eyes widen, bright and shining* Squeak squeak squeak.~
+@67 /*Minsc*/ = ~Boo! Boo! Minsc's strategic advisor! Minsc's lucky charm! Minsc's heartbeat detector! Where are you?! Minsc feels his tactical instincts fading!—Boo! Come back to Minsc!~
+
+//Seventh Boo-Wilson Friendship Dialogue — Contentment (while the party is resting)
+@68 /*Boo*/ = ~Squeak squeak squeak. *Boo is sprawled on top of Wilson's head, looking a bit excited.*~ [AMB_E45B]
+@69 /*Wilson*/ = ~Grumble grumble. *Wilson seems completely unconcerned about the little creature on his head.*~ [OH87188]
+@70 /*Boo*/ = ~*Boo's little paws rest gently on Wilson's fur, his tail trembling slightly* Squeak squeak squeak.~
+@71 /*Wilson*/ = ~*Wilson's eyes are half-closed, as if he's asleep, but he's still responding to Boo* Arooo.~
+@72 /*Boo*/ = ~*Boo spins in two circles on top of Wilson's head, as if searching for a nest to sleep in* Coo coo.~
+@73 /*Wilson*/ = ~*Wilson's ears twitch gently, allowing the little creature to spin around on his head* Grumble grumble.~
+@74 /*Boo*/ = ~*Boo pauses for a moment, then begins to groom Wilson's fur* Squeak squeak squeak.~
+@75 /*Wilson*/ = ~Low growl* Arooo.~
+@76 /*Boo*/ = ~*Boo pauses, picks out the guard hairs mixed in with the undercoat he's gathered from Wilson's fur with his front paws, and starts stuffing them into his mouth.*~
+@77 /*Minsc*/ = ~*Sleep-talking* Boo... Wilson... Minsc... best companions... together... go home...~
+@78 /*Wilson*/ = ~*Wilson is utterly indifferent to the little fellow plucking his fur on top of his head, letting out a long sigh.* Hmph...~

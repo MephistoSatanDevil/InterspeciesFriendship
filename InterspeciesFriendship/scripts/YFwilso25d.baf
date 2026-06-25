@@ -1,0 +1,15 @@
+
+//2nd Trigger if Party Rest- No 2nd Timer
+IF
+	GlobalTimerExpired("YFWilsonBooTimer","GLOBAL")
+	OR(2)
+		Global("YFWilsonBooTalks","GLOBAL",13)//第四次对话，团队休息时，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",25)//第七次对话，团队休息时，布布发起
+	!Global("YFWilsonBoo","GLOBAL",3)
+	InParty("WILSON")
+	InParty("MINSC")
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+	IncrementGlobal("YFWilsonBooTalks","GLOBAL",1)
+END

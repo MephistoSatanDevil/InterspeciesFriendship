@@ -1,0 +1,128 @@
+//First Wislon-Boo Friendship Timer
+IF
+	InParty("WILSON")
+	InParty("MINSC")
+	!Global("YFWilsonBoo","GLOBAL",3)
+	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
+	OR(6)
+		Global("YFWilsonBooTalks","GLOBAL",0) //第一次对话，威尔逊发起
+		Global("YFWilsonBooTalks","GLOBAL",4) //第二次对话，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",8) //第三次对话，威尔逊发起
+		Global("YFWilsonBooTalks","GLOBAL",12) //第四次对话，团队休息时，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",16) //第五次对话，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",24)//第七次对话，团队休息时，布布发起
+THEN
+	RESPONSE #100
+	IncrementGlobal("YFWilsonBooTalks","GLOBAL",1)
+	SetGlobalTimer("YFWilsonBooTimer","GLOBAL",THREE_DAYS)
+END
+
+//First Trigger if Party in Battle- No 1st Timer
+IF
+	InParty("WILSON")
+	InParty("MINSC")
+	!Global("YFWilsonBoo","GLOBAL",3)
+	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
+	OR(1)
+		Global("YFWilsonBooTalks","GLOBAL",20) //第六次对话，战斗过后，威尔逊发起
+	ActuallyInCombat()
+THEN
+	RESPONSE #100
+	IncrementGlobal("YFWilsonBooTalks","GLOBAL",1)
+END
+
+//Second Timer if normal trigger requirements
+IF
+	GlobalTimerExpired("YFWilsonBooTimer","GLOBAL")
+	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
+	OR(4)
+		Global("YFWilsonBooTalks","GLOBAL",1)//第一次对话，威尔逊发起
+		Global("YFWilsonBooTalks","GLOBAL",5)//第二次对话，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",9)//第三次对话，威尔逊发起
+		Global("YFWilsonBooTalks","GLOBAL",17)//第五次对话，布布发起
+	!Global("YFWilsonBoo","GLOBAL",3)
+	InParty("WILSON")
+	InParty("MINSC")
+THEN
+	RESPONSE #100
+	IncrementGlobal("YFWilsonBooTalks","GLOBAL",1)
+	SetGlobalTimer("YFWilsonBooTimer","GLOBAL",THIRTY_MINUTES)
+END
+
+//2nd Trigger if Party Battled- No 2nd Timer
+IF
+	GlobalTimerExpired("YFWilsonBooTimer","GLOBAL")
+	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
+	OR(1)
+		Global("YFWilsonBooTalks","GLOBAL",21) //第六次对话，战斗过后，威尔逊发起
+	!Global("YFWilsonBoo","GLOBAL",3)
+	InParty("WILSON")
+	InParty("MINSC")
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+	IncrementGlobal("YFWilsonBooTalks","GLOBAL",1)
+END
+
+//3rd Trigger Create Boo
+IF
+	GlobalTimerExpired("YFWilsonBooTimer","GLOBAL")
+	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
+	OR(7)
+		Global("YFWilsonBooTalks","GLOBAL",2)//第一次对话，威尔逊发起
+		Global("YFWilsonBooTalks","GLOBAL",6)//第二次对话，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",10)//第三次对话，威尔逊发起
+		Global("YFWilsonBooTalks","GLOBAL",14)//第四次对话，团队休息时，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",18)//第五次对话，布布发起
+		Global("YFWilsonBooTalks","GLOBAL",22)//第六次对话，战斗过后，威尔逊发起
+		Global("YFWilsonBooTalks","GLOBAL",26)//第七次对话，团队休息时，布布发起
+	!Global("YFWilsonBoo","GLOBAL",3)
+	IfValidForPartyDialogue("WILSON")
+	IfValidForPartyDialogue("MINSC")
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+	CreateCreature("Boo",[-1.-1],0)
+	IncrementGlobal("YFWilsonBooTalks","GLOBAL",1)
+END
+
+//Dialogue Start Trigger if Wilson talks first (if Boo speaks first it's in Boo.baf)
+IF
+	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
+	OR(3)
+		Global("YFWilsonBooTalks","GLOBAL",3)//第一次对话，威尔逊发起
+		Global("YFWilsonBooTalks","GLOBAL",11)//第三次对话，威尔逊发起
+		Global("YFWilsonBooTalks","GLOBAL",23)//第六次对话，战斗过后，威尔逊发起
+THEN
+	RESPONSE #100
+	StartDialogNoSet(Player1)
+	//Wait(1)
+    //ActionOverride("Boo",DestroySelf())
+END
+
+//Suldanessellar talk. Dialogue start in Boo
+IF
+	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
+	InParty("WILSON")
+	InParty("MINSC")
+	!Global("YFWilsonBoo","GLOBAL",3)
+	AreaCheck("AR2800") //Suldanessellar
+	Global("YFWilsonBooSuldanTalk","GLOBAL",0)
+THEN
+	RESPONSE #100
+	SetGlobal("YFWilsonBooSuldanTalk","GLOBAL",1)
+	SetGlobalTimer("YFWilsonBooSuldanTimer","GLOBAL",ONE_HOUR)
+END
+	
+IF
+	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
+	Global("YFWilsonBooSuldanTalk","GLOBAL",1)
+	GlobalTimerExpired("YFWilsonBooSuldanTimer","GLOBAL")
+	IfValidForPartyDialogue("WILSON")
+	IfValidForPartyDialogue("MINSC")
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		CreateCreature("Boo",[-1.-1],0)
+		SetGlobal("YFWilsonBooSuldanTalk","GLOBAL",2)
+END

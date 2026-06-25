@@ -1,0 +1,92 @@
+//Premier dialogue d'amitié Wilson-Bouh – Première rencontre
+@0 /*Wilson*/ = ~Hou...~ [OH87168]
+@1 /*Bouh*/ = ~*Les moustaches de Bouh frémissent, ses petites griffes agrippent fermement le bord de la poche, ne laissant voir que ses yeux ronds* Squeek squeek...~ [AMB_E45C]
+@2 /*Bouh*/ = ~*Bouh, trouvant sans doute sa propre voix trop faible, rassemble son courage, sort du sac et s'approche de Wilson de quelques pas* Squeek squeek squeek ?~ [AMB_E45A]
+@3 /*Wilson*/ = ~Grrr, hein ? *Wilson regarde autour de lui, perplexe, et finit par repérer le petit hamster caché dans le coin.*~
+@4 /*Bouh*/ = ~*Les moustaches de Bouh frémissent, il observe la créature immense devant lui, prêt à s'enfuir à tout moment* Squeek.~
+@5 /*Wilson*/ = ~*Hum* Wilson renifle, sa tête massive s'abaisse, ses yeux ambrés scintillent à la lumière du feu, un grondement sourd monte de sa gorge, laissant entrevoir la moitié d'une canine jaunie.~
+@6 /*Bouh*/ = ~Squeek squeek... Squeek squeek. *Bouh pousse deux autres cris, puis regarde Wilson, sa queue collée contre son corps, ses moustaches tremblant légèrement de tension.*~
+@7 /*Bouh*/ = ~Squeeek— *Bouh, semblant un peu gêné, lèche ses pattes avant et commence à faire sa toilette. Son pelage est encore couvert de miettes de coques de noix rapportées du sac.*~
+@8 /*Wilson*/ = ~Mmm, aargh... *Wilson inspire profondément, éternue et gratte le sol de ses griffes, laissant de profondes marques, son dos épais se soulevant et s'abaissant légèrement.*~
+@9 /*Bouh*/ = ~Squeek squeek... Squeek squeek. *Après avoir nettoyé son museau et ses petites oreilles, Bouh pousse deux cris et retourne en courant dans le sac.*~
+@10 /*Minsc*/ = ~Bouh, où es-tu allé ? Minsk t'a attrapé un délicieux gros ver. Quoi ? Tu dis que tu as vu une grosse bête ?~
+@11 /*Bouh*/ = ~Squeeek—~ [AMB_E45B]
+
+//Deuxième dialogue d'amitié Bouh-Wilson – Se rapprocher
+@12 /*Bouh*/ = ~Squiiik *Bouh regarde Wilson avec envie, ses moustaches frémissent, son petit nez renifle l'air sans cesse.*~ [AMB_E45C]
+@13 /*Wilson*/ = ~Houuu— *Wilson regarde Bouh et grogne sourdement.*~ [OH87168]
+@14 /*Bouh*/ = ~Squeek squeek *Comme effrayé par la voix de Wilson, Bouh hérisse soudainement son pelage.*~
+@15 /*Wilson*/ = ~Houffe *Wilson renifle, un coin de sa bouche semble tressaillir, laissant entrevoir sa canine.*~
+@16 /*Bouh*/ = ~*Bouh s'approche lentement de quelques pas, son petit nez hume l'air, ses moustaches tendues vers l'avant, sa queue légèrement dressée, ses oreilles droites.*~
+@17 /*Wilson*/ = ~*Aouuh* Il regarde Bouh, son regard est complexe, sa tête massive s'incline légèrement, il pousse un long hurlement dont l'haleine chaude fait plier les moustaches de Bouh vers l'arrière.*~
+@18 /*Bouh*/ = ~*Bouh sursaute, mais se reprend vite, ses oreilles se dressent, ses petites pattes essuient son museau, ses moustaches s'enroulent légèrement de curiosité.*~
+@19 /*Wilson*/ = ~*Ses griffes jouent avec un caillou au sol, il grogne, sa lourde patte frappant le sol avec force* Aargh.~
+@20 /*Bouh*/ = ~*Pensif, il se gratte le museau de ses petites pattes, ses moustaches frémissent légèrement* Squeek squeek squeek.~
+@21 /*Wilson*/ = ~Grrr grrr *Les épaules massives de Wilson tressautent légèrement, ses griffes creusent des marques plus profondes dans le sol.*~
+@22 /*Minsc*/ = ~Bouh ! Minsk flaire l'odeur de la sagesse ! Tu parles encore aux pierres ? Reviens vite ! Minsk a besoin de ton analyse tactique !~
+
+//Troisième dialogue d'amitié Wilson-Bouh – Se familiariser
+@23 /*Wilson*/ = ~Hum... Hein ? *Wilson regarde avec perplexité le petit animal qui s'approche de lui.*~ [OH87168]
+@24 /*Bouh*/ = ~*Bouh semble inconscient du danger, il grimpe vers la grande patte de Wilson et s'assoit pour masser vigoureusement ses grosses bajoues.*~ [AMB_E45B]
+@25 /*Wilson*/ = ~Hum, hein ? *Sans le déranger, Wilson observe avec incompréhension cette petite créature affairée.*~
+@26 /*Bouh*/ = ~*Après un effort acharné, Bouh finit par extraire de sa bajoue une noix longue comme la moitié de son corps et la dépose sur la grande patte de Wilson.*~
+@27 /*Wilson*/ = ~Hou ? *Wilson regarde avec stupéfaction la noix posée sur sa patte, une noix qui ne fait qu'un quart de la taille de sa patte.*~
+@28 /*Bouh*/ = ~*Bouh se redresse sur ses pattes arrière* Squeek squeek... Squeek squeek squeek.~
+@29 /*Wilson*/ = ~*Wilson grogne doucement* Aouuuh...~
+@30 /*Bouh*/ = ~*Bouh s'assied près de la patte de Wilson* Squeek squeek squeek...~
+@31 /*Wilson*/ = ~Aargh... Hou ! *Wilson hoche la tête et touche doucement Bouh du bout du nez.*~
+@32 /*Bouh*/ = ~Squeek squeek squeek ?~
+@33 /*Wilson*/ = ~Mmm, aargh.~
+@34 /*Minsc*/ = ~Bouh— ! Minsk ne trouve plus la plus grosse noix du monde qu'il t'avait préparée ! Bouh !~
+@35 /*Bouh*/ = ~Squeeek— *Bouh saute aussitôt de la patte de Wilson et fonce vers la direction de la voix.*~
+@36 /*Wilson*/ = ~*Wilson baisse la tête, renifle la noix restée sur sa patte, donne un coup de langue et l'avale d'une bouchée.*~
+
+//Quatrième dialogue d'amitié Bouh-Wilson – Devenir amis
+@37 /*Bouh*/ = ~*La voix de Bouh est très douce, mais ne tremble plus* Squeek squeek.~ [AMB_E45B]
+@38 /*Wilson*/ = ~Aargh... Hou. *Wilson répond doucement*~ [OH87168]
+@39 /*Bouh*/ = ~*Hésitant, ses petites pattes croisées sur la poitrine* Squeek squeek squeek.~
+@40 /*Wilson*/ = ~Hum. *Il tourne la tête vers Bouh et souffle doucement.*~
+@41 /*Bouh*/ = ~Grou grou... Squeek squeek... Grou grou...~
+@42 /*Wilson*/ = ~Houuuh... *Il émet un gémissement sourd.*~
+@43 /*Bouh*/ = ~*Soupir* Squeek squeek... Squeeek—~
+@44 /*Wilson*/ = ~Houu— *Il secoue lentement la tête, son nez renifle l'air et il pousse un long souffle.*~
+@45 /*Bouh*/ = ~*Ses oreilles retombent* Squeeek— ?~
+@46 /*Wilson*/ = ~Grrr. Aargh. *Wilson regarde Minsk endormi, ses griffes grattant machinalement le sol.*~
+@47 /*Bouh*/ = ~*Long silence, ses petites pattes agrippent inconsciemment la fourrure de Wilson, émettant de petits couinements* Squeek squeek squeek...~
+@48 /*Wilson*/ = ~*Wilson frotte doucement son nez contre le sommet de la tête de Bouh, sort sa langue comme pour le lécher, mais s'arrête soudain et se tourne pour lécher son autre patte.*~
+@49 /*Minsc*/ = ~*Rêvant* Bouh... gauche... embuscade... dis-le vite à Minsk...~
+
+//Cinquième dialogue d'amitié Bouh-Wilson – Demander de l'aide (contrôler la colère)
+@50 /*Bouh*/ = ~*Pressant* Squeek squeek.~ [AMB_E45B]
+@51 /*Wilson*/ = ~*Wilson est calme, ses oreilles dressées* Aouuuh—~ [OH87168]
+@52 /*Bouh*/ = ~*Ses petites pattes miment* Squeek squeek squeek.~
+@53 /*Wilson*/ = ~*Wilson émet un grognement sourd et frappe violemment le sol de sa patte* Aouuuh.~
+@54 /*Bouh*/ = ~Squiiik. *Bouh reste figé un instant, puis s'écrie rapidement.* Squeek squeek squeek.~
+@55 /*Wilson*/ = ~*Wilson se tait un moment, puis gronde avec une légère hésitation* Grrr grrr.~
+@56 /*Bouh*/ = ~*Bouh penche la tête, fixe Wilson, puis fait deux tours sur lui-même et se dresse pour regarder Minsk* Squeek squeek squeek.~
+@57 /*Minsc*/ = ~Bouh ! Bouh ! Minsk a besoin de la chaleur de ta poche ! Où es-tu ?! Minsk ne sent plus ton odeur ! — Bouh ! Reviens vite !~
+@58 /*Bouh*/ = ~*Bouh court vers Minsk, mais à mi-chemin, il se retourne pour regarder Wilson.* Squeek squeek.~
+
+//Sixième dialogue d'amitié Wilson-Bouh – Aider (Go for the eyes !) Après le combat
+@59 /*Wilson*/ = ~Hou hein ? *Wilson revoit le petit animal agile courir vers lui.*~ [OH87168]
+@60 /*Bouh*/ = ~Grou grou. Squeek squeek ? *Bouh raconte quelque chose à Wilson, puis pose sa question.*~ [AMB_E45B]
+@61 /*Wilson*/ = ~*Calme, ses oreilles bougent, il grogne* Aouuuh...~
+@62 /*Bouh*/ = ~Squeek squeek squeek ? *Bouh semble incrédule, il s'assied et se met à réfléchir sérieusement.*~
+@63 /*Wilson*/ = ~Aargh. *Wilson grogne en fixant Bouh.*~
+@64 /*Bouh*/ = ~*Bouh lève la tête, ses oreilles se dressent légèrement, puis il fait soudain un mouvement d'attaque féroce* Squeeek—~
+@65 /*Wilson*/ = ~Aouuuh. *Wilson émet un grognement approbateur.*~
+@66 /*Bouh*/ = ~*Bouh écarquille les yeux, son regard pétille* Squeek squeek squeek.~
+@67 /*Minsc*/ = ~Bouh ! Bouh ! Le conseiller stratégique de Minsk ! Le porte-bonheur de Minsk ! Le détecteur de battements de cœur de Minsk ! Où es-tu ?! Minsk sent son instinct tactique décliner ! — Bouh ! Reviens vite auprès de Minsk !~
+
+//Septième dialogue d'amitié Bouh-Wilson – Comblé
+@68 /*Bouh*/ = ~Squeek squeek squeek. *Bouh, tel un roi, est assis sur le sommet de la tête de Wilson, un peu excité.*~ [AMB_E45B]
+@69 /*Wilson*/ = ~Grrr grrr. *Wilson semble s'être habitué à la petite créature sur sa tête.*~ [OH87188]
+@70 /*Bouh*/ = ~*Les petites pattes de Bouh reposent doucement sur la fourrure de Wilson, sa queue tremble légèrement.* Squeek squeek squeek.~
+@71 /*Wilson*/ = ~*Wilson plisse les yeux, comme endormi, mais répond à Bouh.* Aouuuh.~
+@72 /*Bouh*/ = ~*Bouh s'abaisse et fait deux tours sur le sommet de la tête de Wilson, comme s'il cherchait quelque chose.* Grou grou.~
+@73 /*Wilson*/ = ~*Les oreilles de Wilson frémissent doucement, laissant le petit animal tourner sur sa tête.* Grrr grrr.~
+@74 /*Bouh*/ = ~*Bouh s'arrête un instant et commence à lisser le pelage de Wilson* Squeek squeek squeek.~
+@75 /*Wilson*/ = ~Grogne* Aouuuh.~
+@76 /*Bouh*/ = ~*Bouh s'arrête, retire les poils de garde mêlés aux poils de sous-poil qu'il a saisis entre ses pattes avant, et commence à les fourrer dans sa bouche. Il semble très satisfait de ces poils ; la poche de Minsk abritera bientôt un nid de hamster en fourrure d'ours.*~
+@77 /*Minsc*/ = ~*Rêvant* Bouh... Minsk... meilleurs compagnons... ensemble...~
+@78 /*Wilson*/ = ~*Wilson, indifférent au petit qui lui arrache des poils sur la tête, souffle longuement.* Hum...~
