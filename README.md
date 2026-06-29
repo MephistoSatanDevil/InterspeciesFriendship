@@ -2,11 +2,11 @@
 
 # Interspecies Friendship: Boo & Wilson
 
-A tiny Baldur's Gate II mod that adds **seven interjections** for **Boo** and **Wilson**.
+A tiny Baldur's Gate II mod that adds **seven banters** for **Boo** and **Wilson**.
 
 ## What This Is
 
-When both **Minsc** and **Wilson** are in the party, Boo will pipe up in various situations. Over the course of seven interjections, Boo gradually gets to know Wilson and learns a thing or two from the best bear in the world:
+When both **Minsc** and **Wilson** are in the party, Boo will pipe up in various situations. Over the course of seven banters, Boo gradually gets to know Wilson and learns a thing or two from the best bear in the world:
 
 - How to help Minsc keep his berserker rage in check
 - How to actually help Minsc in combat
@@ -24,7 +24,7 @@ When both **Minsc** and **Wilson** are in the party, Boo will pipe up in various
 
 ## Notes
 
-- Interjections only trigger when **both Minsc and Wilson are in the party**
+- Banters only trigger when **both Minsc and Wilson are in the party**
 
 ---
 
