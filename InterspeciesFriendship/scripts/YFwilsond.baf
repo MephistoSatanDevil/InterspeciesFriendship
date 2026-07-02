@@ -8,6 +8,7 @@ IF
 	!Global("YFWilsonBoo","GLOBAL",3)
 	InParty("WILSON")
 	InParty("MINSC")
+	HasItem("MISC84","MINSC")
 	CombatCounter(0)
 THEN
 	RESPONSE #100
