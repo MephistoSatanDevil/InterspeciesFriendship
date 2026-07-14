@@ -3,7 +3,7 @@ IF
 	!GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
 	InParty("WILSON")
 	InParty("MINSC")
-	HasItem("MISC84","MINSC")
+	PartyHasItem("MISC84")
 	!Global("YFWilsonBoo","GLOBAL",3)
 	OR(6)
 		Global("YFWilsonBooTalks","GLOBAL",0) //第一次对话，威尔逊发起
@@ -23,7 +23,7 @@ IF
 	!GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
 	InParty("WILSON")
 	InParty("MINSC")
-	HasItem("MISC84","MINSC")
+	PartyHasItem("MISC84")
 	!Global("YFWilsonBoo","GLOBAL",3)
 	OR(1)
 		Global("YFWilsonBooTalks","GLOBAL",20) //第六次对话，战斗过后，威尔逊发起
@@ -45,7 +45,7 @@ IF
 	!Global("YFWilsonBoo","GLOBAL",3)
 	InParty("WILSON")
 	InParty("MINSC")
-	HasItem("MISC84","MINSC")
+	PartyHasItem("MISC84")
 THEN
 	RESPONSE #100
 	IncrementGlobal("YFWilsonBooTalks","GLOBAL",1)
@@ -61,7 +61,7 @@ IF
 	!Global("YFWilsonBoo","GLOBAL",3)
 	InParty("WILSON")
 	InParty("MINSC")
-	HasItem("MISC84","MINSC")
+	PartyHasItem("MISC84")
 	!ActuallyInCombat()
 THEN
 	RESPONSE #100
