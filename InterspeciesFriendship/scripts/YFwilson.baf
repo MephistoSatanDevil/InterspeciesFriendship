@@ -2,7 +2,7 @@
 IF
 	InParty("WILSON")
 	InParty("MINSC")
-	PartyHasItem("MISC84")
+	HasItem("MISC84","MINSC")
 	!Global("YFWilsonBoo","GLOBAL",3)
 	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
 	OR(6)
@@ -22,7 +22,7 @@ END
 IF
 	InParty("WILSON")
 	InParty("MINSC")
-	PartyHasItem("MISC84")
+	HasItem("MISC84","MINSC")
 	!Global("YFWilsonBoo","GLOBAL",3)
 	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
 	OR(1)
@@ -45,7 +45,7 @@ IF
 	!Global("YFWilsonBoo","GLOBAL",3)
 	InParty("WILSON")
 	InParty("MINSC")
-	PartyHasItem("MISC84")
+	HasItem("MISC84","MINSC")
 THEN
 	RESPONSE #100
 	IncrementGlobal("YFWilsonBooTalks","GLOBAL",1)
@@ -61,7 +61,7 @@ IF
 	!Global("YFWilsonBoo","GLOBAL",3)
 	InParty("WILSON")
 	InParty("MINSC")
-	PartyHasItem("MISC84")
+	HasItem("MISC84","MINSC")
 	!ActuallyInCombat()
 THEN
 	RESPONSE #100
@@ -109,7 +109,7 @@ IF
 	GlobalLT("chapter","GLOBAL",%bg2_chapter_8%)
 	InParty("WILSON")
 	InParty("MINSC")
-	PartyHasItem("MISC84")
+	HasItem("MISC84","MINSC")
 	!Global("YFWilsonBoo","GLOBAL",3)
 	AreaCheck("AR2800") //Suldanessellar
 	Global("YFWilsonBooSuldanTalk","GLOBAL",0)
